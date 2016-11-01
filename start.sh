@@ -63,3 +63,9 @@ sudo service bind9 restart
 # Start
 /etc/init.d/kerio-connect start
 bash
+
+else
+echo "Install Wrong! Please Check Image or Path Config!
+echo "contact: ducanh.babim@yahoo.com"
+sleep 60
+fi
