@@ -1,4 +1,4 @@
-# docker-kerioconnect
+# Kerio Connect 9 (lastest) on Docker
 Run good on coreos. With MX from DNS localhost
 
 ```
