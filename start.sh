@@ -70,7 +70,7 @@ sudo service bind9 restart
 bash
 
 else
-echo "Install Wrong! Please Check Image or Path Config!
+echo "Install Wrong! Please Check Image or Path Config!"
 echo "contact: ducanh.babim@yahoo.com"
 sleep 60
 fi
