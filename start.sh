@@ -1,6 +1,4 @@
 #!/bin/bash
-chown root:root /var/run/sshd
-service ssh start
 
 # Prepare Kerio bin
 if [ -z "`ls /opt/kerio`" ]
