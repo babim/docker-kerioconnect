@@ -1,11 +1,16 @@
 #!/bin/bash
 
-# Prepare
-if [ -z "`ls /opt/kerio`" ] 
+# Prepare Kerio bin
+if [ -z "`ls /opt/kerio`" ]
+then
+	mv /opt-start/kerio/mailserver /opt/kerio
+fi
+if [ -z "`ls /opt/kerio/mailserver`" ]
 then
 	rsync -arvpz --numeric-ids /opt-start/kerio/ /opt/kerio
 fi
 
+# Prepare DNS
 if [ -f "/opt/kerio/mailserver/mailserver" ]; then
 HOSTNAME=$(hostname -s)
 DOMAIN=$(hostname -d)
