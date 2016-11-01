@@ -1,4 +1,4 @@
-FROM babim/ubuntubaseinit:14.04
+FROM babim/ubuntubaseinit:14.04.ssh
 ENV DEBIAN_FRONTEND noninteractive
 
 ## Install ##
