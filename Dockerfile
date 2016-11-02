@@ -1,4 +1,4 @@
-FROM babim/ubuntubaseinit:14.04.ssh
+FROM babim/ubuntubase:14.04.ssh
 ENV DEBIAN_FRONTEND noninteractive
 
 ## Install ##
@@ -20,11 +20,13 @@ rm -f /etc/dpkg/dpkg.cfg.d/02apt-speedup
 RUN mkdir /opt-start && mv /opt/kerio /opt-start
 
 # Expose the default portonly 4040 is nessecary for admin access 
-EXPOSE 4040 22 25 465 587 110 995 143 993 119 563 389 636 80 443 5222 5223
+EXPOSE 4040 22 25 465 587 110 995 143 993 119 563 389 636 80 443 5222 5223 5269
 
 COPY etc /etc/
 
 VOLUME ["/opt/kerio"]
 
-ADD start.sh /etc/my_init.d/startup.sh
-RUN chmod +x /etc/my_init.d/startup.sh
+ADD start.sh /startup.sh
+RUN chmod +x /startup.sh
+
+ENTRYPOINT ["/startup.sh"]
