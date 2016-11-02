@@ -1,4 +1,4 @@
-FROM babim/ubuntubaseinit:14.04
+FROM babim/ubuntubase:14.04
 ENV DEBIAN_FRONTEND noninteractive
 
 ## Install ##
@@ -26,5 +26,7 @@ COPY etc /etc/
 
 VOLUME ["/opt/kerio"]
 
-ADD start.sh /etc/my_init.d/startup.sh
-RUN chmod +x /etc/my_init.d/startup.sh
+ADD start.sh /startup.sh
+RUN chmod +x /startup.sh
+
+ENTRYPOINT ["/startup.sh"]
