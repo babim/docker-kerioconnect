@@ -3,7 +3,7 @@ ENV DEBIAN_FRONTEND noninteractive
 
 ## Install ##
 RUN apt-get update && apt-get install -y wget bind9 bind9utils bind9-doc dnsutils resolvconf sysstat lsof rsync
-RUN wget -O kerio-connect-linux-64bit.deb http://download.kerio.com/dwn/kerio-connect-linux-64bit.deb && \
+RUN wget -O kerio-connect-linux-64bit.deb http://media.matmagoc.com/kerio-connect-linux-64bit.deb && \
     dpkg -i kerio-connect-linux-64bit.deb && apt-get install -f && rm -f kerio-connect-linux-64bit.deb
 
 ## Clean ##
