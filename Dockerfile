@@ -26,7 +26,7 @@ COPY etc /etc/
 
 VOLUME ["/opt/kerio"]
 
-ADD start.sh /startup.sh
-RUN chmod +x /startup.sh
+ADD start.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
 
-ENTRYPOINT ["/startup.sh"]
+ENTRYPOINT ["/entrypoint.sh"]
