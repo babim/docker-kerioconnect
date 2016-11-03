@@ -63,7 +63,7 @@ imap     IN      A      $CONTAINERIP
 imap4     IN      A      $CONTAINERIP
 smtp     IN      A      $CONTAINERIP
 EOF
-sudo service bind9 restart 
+sudo service bind9 start 
 
 # Start
 /etc/init.d/kerio-connect start
