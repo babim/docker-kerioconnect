@@ -3,7 +3,7 @@
 # Prepare Kerio bin
 if [ -z "`ls /opt/kerio`" ]
 then
-	cp -R /opt-start/kerio/mailserver /opt/kerio
+	cp -R /opt-start/kerio/* /opt/kerio
 fi
 if [ -z "`ls /opt/kerio/mailserver`" ]
 then
