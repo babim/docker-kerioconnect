@@ -65,6 +65,10 @@ smtp     IN      A      $CONTAINERIP
 EOF
 sudo service bind9 start 
 
+# set password root is root
+SSHPASS1=${SSHPASS:-root}
+echo "root:$SSHPASS1" | chpasswd
+service ssh start
 # Start
 /etc/init.d/kerio-connect start
 bash
