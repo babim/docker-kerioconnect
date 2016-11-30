@@ -1,3 +1,7 @@
+[![](https://images.microbadger.com/badges/image/babim/kerio-connect.svg)](https://microbadger.com/images/babim/kerio-connect "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/kerio-connect.svg)](https://microbadger.com/images/babim/kerio-connect "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/babim/kerio-connect:ssh.svg)](https://microbadger.com/images/babim/kerio-connect:ssh "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/kerio-connect:ssh.svg)](https://microbadger.com/images/babim/kerio-connect:ssh "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/babim/kerio-connect:fixed.svg)](https://microbadger.com/images/babim/kerio-connect:fixed "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/kerio-connect:fixed.svg)](https://microbadger.com/images/babim/kerio-connect:fixed "Get your own version badge on microbadger.com")
+
 # Kerio Connect 9 (lastest) on Docker
 Run good on coreos. With MX from DNS localhost
 
