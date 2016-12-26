@@ -2,7 +2,7 @@ FROM babim/ubuntubase:14.04
 ENV DEBIAN_FRONTEND noninteractive
 
 ## Install ##
-RUN apt-get update && apt-get install -y wget bind9 bind9utils bind9-doc dnsutils resolvconf sysstat lsof rsync
+RUN apt-get update && apt-get install -y wget bind9 bind9utils bind9-doc dnsutils resolvconf sysstat lsof
 RUN wget -O kerio-connect-linux-64bit.deb http://media.matmagoc.com/kerio-connect-linux-64bit.deb && \
     dpkg -i kerio-connect-linux-64bit.deb && apt-get install -f && rm -f kerio-connect-linux-64bit.deb
 
@@ -13,7 +13,7 @@ RUN apt-get clean && \
     rm -rf /build && \
     rm -rf /tmp/* /var/tmp/* && \
     rm -rf /var/lib/apt/lists/* && \
-rm -f /etc/dpkg/dpkg.cfg.d/02apt-speedup
+    rm -f /etc/dpkg/dpkg.cfg.d/02apt-speedup
 
 ## Prepare start ##
 #RUN mkdir -p /opt-start/kerio && rsync -arvpz --numeric-ids /opt/kerio/ /opt-start/kerio && rm -rf /opt/kerio/*
