@@ -5,9 +5,9 @@ if [ -z "`ls /opt/kerio`" ]
 then
 	cp -R /opt-start/kerio/* /opt/kerio
 fi
-if [ -z "`ls /opt/kerio/mailserver`" ]
+if [ ! -f "/opt/kerio/mailserver/mailserver" ] && [ ! -f "/opt/kerio/mailserver/sendmail" ] && [ ! -f "/opt/kerio/mailserver/kmsrecover" ]
 then
-	rsync -arvpz --numeric-ids /opt-start/kerio/ /opt/kerio
+	cp -Rn /opt-start/kerio/* /opt/kerio/
 fi
 
 # Prepare DNS
