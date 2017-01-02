@@ -7,7 +7,7 @@ Run good on coreos. With MX from DNS localhost
 
 ```
 $ sudo docker run -it --name=kerioconnect \
--h mail.domain.test \
+-h mail.domain.test -e DNSSERVER=192.168.1.2 \
 -p 4040:4040 \
 -p 22:22 -p 25:25 -p 465:465 -p 587:587 -p 110:110 -p 995:995 \
 -p 143:143 -p 993:993 -p 119:119 -p 563:563 -p 389:389 -p 636:636 \
