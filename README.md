@@ -11,7 +11,7 @@ Run good on coreos. With MX from DNS localhost
 
 tag: with and without kerberos.
 
-Note: Your Linux OS maybe Freeze If you authen to AD over Kerberos (Freeze with RancherOS, Stable on Ubuntu)
+Note: Your Linux OS maybe Freeze host, If you authen to AD over Kerberos (Freeze with RancherOS, Stable on Ubuntu)
 
 ```
 $ sudo docker run -it --name=kerioconnect \
