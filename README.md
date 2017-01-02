@@ -2,8 +2,16 @@
 [![](https://images.microbadger.com/badges/image/babim/kerio-connect:ssh.svg)](https://microbadger.com/images/babim/kerio-connect:ssh "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/kerio-connect:ssh.svg)](https://microbadger.com/images/babim/kerio-connect:ssh "Get your own version badge on microbadger.com")
 [![](https://images.microbadger.com/badges/image/babim/kerio-connect:fixed.svg)](https://microbadger.com/images/babim/kerio-connect:fixed "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/kerio-connect:fixed.svg)](https://microbadger.com/images/babim/kerio-connect:fixed "Get your own version badge on microbadger.com")
 
+[![](https://images.microbadger.com/badges/image/babim/kerio-connect:nokrb.svg)](https://microbadger.com/images/babim/kerio-connect:nokrb "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/kerio-connect:nokrb.svg)](https://microbadger.com/images/babim/kerio-connect:nokrb "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/babim/kerio-connect:ssh.nokrb.svg)](https://microbadger.com/images/babim/kerio-connect:ssh.nokrb "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/kerio-connect:ssh.nokrb.svg)](https://microbadger.com/images/babim/kerio-connect:ssh.nokrb "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/babim/kerio-connect:fixed.nokrb.svg)](https://microbadger.com/images/babim/kerio-connect:fixed.nokrb "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/kerio-connect:fixed.nokrb.svg)](https://microbadger.com/images/babim/kerio-connect:fixed "Get your own version badge on microbadger.com")
+
 ## Kerio Connect 9 (lastest) on Docker
 Run good on coreos. With MX from DNS localhost
+
+tag: with and without kerberos.
+
+Note: Your Linux OS maybe Freeze If you authen over Kerberos to AD
 
 ```
 $ sudo docker run -it --name=kerioconnect \
