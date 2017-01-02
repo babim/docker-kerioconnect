@@ -2,7 +2,7 @@ FROM babim/ubuntubase:14.04
 ENV DEBIAN_FRONTEND noninteractive
 
 ## Install ##
-RUN apt-get update && apt-get install -y wget bind9 bind9utils bind9-doc dnsutils resolvconf sysstat lsof
+RUN apt-get update && apt-get install -y wget dnsutils resolvconf sysstat lsof
 RUN wget -O kerio-connect-linux-64bit.deb http://media.matmagoc.com/kerio-connect-linux-64bit.deb && \
     dpkg -i kerio-connect-linux-64bit.deb && apt-get install -f && rm -f kerio-connect-linux-64bit.deb
 
