@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Prepare Kerio bin
-if [ -z "`ls /opt/kerio`" ]
+if [ -z "`ls /opt/kerio --hide='lost+found'`" ]
 then
 	cp -R /opt-start/kerio/* /opt/kerio
 fi
