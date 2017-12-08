@@ -32,7 +32,6 @@ while :; do
 done
 else
 
-else
 echo "Install Wrong! Please Check Image or Path Config!"
 echo "contact: ducanh.babim@yahoo.com"
 sleep 60
