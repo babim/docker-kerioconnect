@@ -24,10 +24,17 @@ echo "nameserver 8.8.8.8" >> /etc/resolv.conf
     if [ -f "/runssh.sh" ]; then /runssh.sh; fi
 
 # Start
+function terminate {
+	service kerio-connect stop
+	exit 0
+}
+trap terminate TERM INT
 /etc/init.d/kerio-connect start
-bash
-
+while :; do
+	sleep 1;
+done
 else
+
 echo "Install Wrong! Please Check Image or Path Config!"
 echo "contact: ducanh.babim@yahoo.com"
 sleep 60
