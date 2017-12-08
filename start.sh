@@ -21,8 +21,16 @@ echo "nameserver $DNSSERVER" > /etc/resolv.conf
 echo "nameserver 8.8.8.8" >> /etc/resolv.conf
 
 # Start
+function terminate {
+	service kerio-connect stop
+	exit 0
+}
+trap terminate TERM INT
 /etc/init.d/kerio-connect start
-bash
+while :; do
+	sleep 1;
+done
+else
 
 else
 echo "Install Wrong! Please Check Image or Path Config!"
