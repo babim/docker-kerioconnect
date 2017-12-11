@@ -3,7 +3,7 @@ ENV DEBIAN_FRONTEND noninteractive
 
 ## Install ##
 RUN apt-get update && apt-get install -y wget dnsutils resolvconf sysstat lsof krb5-kdc krb5-admin-server && \
-    mv /etc/krb5.conf /opt/kerio && ln -sf /opt/kerio/krb5.conf /etc/krb5.conf
+    mv /etc/krb5.conf /opt/kerio/ && ln -sf /opt/kerio/krb5.conf /etc/krb5.conf
 RUN wget -O kerio-connect-linux-64bit.deb http://media.matmagoc.com/kerio-connect-linux-64bit.deb && \
     dpkg -i kerio-connect-linux-64bit.deb && apt-get install -f && rm -f kerio-connect-linux-64bit.deb
 
