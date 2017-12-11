@@ -1,37 +1,94 @@
-[![](https://images.microbadger.com/badges/image/babim/kerio-connect.svg)](https://microbadger.com/images/babim/kerio-connect "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/kerio-connect.svg)](https://microbadger.com/images/babim/kerio-connect "Get your own version badge on microbadger.com")
-[![](https://images.microbadger.com/badges/image/babim/kerio-connect:ssh.svg)](https://microbadger.com/images/babim/kerio-connect:ssh "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/kerio-connect:ssh.svg)](https://microbadger.com/images/babim/kerio-connect:ssh "Get your own version badge on microbadger.com")
-[![](https://images.microbadger.com/badges/image/babim/kerio-connect:fixed.svg)](https://microbadger.com/images/babim/kerio-connect:fixed "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/kerio-connect:fixed.svg)](https://microbadger.com/images/babim/kerio-connect:fixed "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/babim/nginx:proxy.svg)](https://microbadger.com/images/babim/nginx:proxy "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/nginx:proxy.svg)](https://microbadger.com/images/babim/nginx:proxy "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/babim/nginx:proxy.ssh.svg)](https://microbadger.com/images/babim/nginx:proxy.ssh "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/nginx:proxy.ssh.svg)](https://microbadger.com/images/babim/nginx:proxy.ssh "Get your own version badge on microbadger.com")
 
-[![](https://images.microbadger.com/badges/image/babim/kerio-connect:nokrb.svg)](https://microbadger.com/images/babim/kerio-connect:nokrb "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/kerio-connect:nokrb.svg)](https://microbadger.com/images/babim/kerio-connect:nokrb "Get your own version badge on microbadger.com")
-[![](https://images.microbadger.com/badges/image/babim/kerio-connect:ssh.nokrb.svg)](https://microbadger.com/images/babim/kerio-connect:ssh.nokrb "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/kerio-connect:ssh.nokrb.svg)](https://microbadger.com/images/babim/kerio-connect:ssh.nokrb "Get your own version badge on microbadger.com")
-[![](https://images.microbadger.com/badges/image/babim/kerio-connect:fixed.nokrb.svg)](https://microbadger.com/images/babim/kerio-connect:fixed.nokrb "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/kerio-connect:fixed.nokrb.svg)](https://microbadger.com/images/babim/kerio-connect:fixed "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/babim/nginx:proxy.alpine.svg)](https://microbadger.com/images/babim/nginx:proxy.alpine "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/nginx:proxy.alpine.svg)](https://microbadger.com/images/babim/nginx:proxy.alpine "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/babim/nginx:proxy.alpine.ssh.svg)](https://microbadger.com/images/babim/nginx:proxy.alpine.ssh "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/nginx:proxy.alpine.ssh.svg)](https://microbadger.com/images/babim/nginx:proxy.alpine.ssh "Get your own version badge on microbadger.com")
 
-## Kerio Connect 9 (lastest) on Docker
-Run good on coreos. With MX from DNS localhost
+[![](https://images.microbadger.com/badges/image/babim/nginx:pagespeed.alpine.svg)](https://microbadger.com/images/babim/nginx:pagespeed.alpine "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/nginx:pagespeed.alpine.svg)](https://microbadger.com/images/babim/nginx:pagespeed.alpine "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/babim/nginx:pagespeed.alpine.synology.svg)](https://microbadger.com/images/babim/nginx:pagespeed.alpine.synology "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/nginx:pagespeed.alpine.synology.svg)](https://microbadger.com/images/babim/nginx:pagespeed.alpine.synology "Get your own version badge on microbadger.com")
 
-tag: with and without kerberos.
+[![](https://images.microbadger.com/badges/image/babim/nginx:php5.svg)](https://microbadger.com/images/babim/nginx:php5 "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/nginx:php5.svg)](https://microbadger.com/images/babim/nginx:php5 "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/babim/nginx:php5.ssh.svg)](https://microbadger.com/images/babim/nginx:php5.ssh "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/nginx:php5.ssh.svg)](https://microbadger.com/images/babim/nginx:php5.ssh "Get your own version badge on microbadger.com")
 
-Note: Your Linux OS maybe Freeze host, If you authen to AD over Kerberos (Freeze with RancherOS, Stable on Ubuntu)
+[![](https://images.microbadger.com/badges/image/babim/nginx:php5.cron.svg)](https://microbadger.com/images/babim/nginx:php5.cron "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/nginx:php5.cron.svg)](https://microbadger.com/images/babim/nginx:php5.cron "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/babim/nginx:php5.cron.ssh.svg)](https://microbadger.com/images/babim/nginx:php5.cron.ssh "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/nginx:php5.cron.ssh.svg)](https://microbadger.com/images/babim/nginx:php5.cron.ssh "Get your own version badge on microbadger.com")
 
+[![](https://images.microbadger.com/badges/image/babim/nginx:php5.cron.nfs.svg)](https://microbadger.com/images/babim/nginx:php5.cron.nfs "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/nginx:php5.cron.nfs.svg)](https://microbadger.com/images/babim/nginx:php5.cron.nfs "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/babim/nginx:php5.cron.synology.svg)](https://microbadger.com/images/babim/nginx:php5.cron.synology "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/nginx:php5.cron.synology.svg)](https://microbadger.com/images/babim/nginx:php5.synology.ssh "Get your own version badge on microbadger.com")
+
+[![](https://images.microbadger.com/badges/image/babim/nginx:php5.alpine.svg)](https://microbadger.com/images/babim/nginx:php5.alpine "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/nginx:php5.alpine.svg)](https://microbadger.com/images/babim/nginx:php5.alpine "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/babim/nginx:php5.alpine.ssh.svg)](https://microbadger.com/images/babim/nginx:php5.alpine.ssh "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/nginx:php5.alpine.ssh.svg)](https://microbadger.com/images/babim/nginx:php5.alpine.ssh "Get your own version badge on microbadger.com")
+
+[![](https://images.microbadger.com/badges/image/babim/nginx:php5.alpine.cron.svg)](https://microbadger.com/images/babim/nginx:php5.alpine.cron "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/nginx:php5.alpine.cron.svg)](https://microbadger.com/images/babim/nginx:php5.alpine.cron "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/babim/nginx:php5.alpine.cron.ssh.svg)](https://microbadger.com/images/babim/nginx:php5.alpine.cron.ssh "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/nginx:php5.alpine.cron.ssh.svg)](https://microbadger.com/images/babim/nginx:php5.alpine.cron.ssh "Get your own version badge on microbadger.com")
+
+[![](https://images.microbadger.com/badges/image/babim/nginx:php7.svg)](https://microbadger.com/images/babim/nginx:php7 "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/nginx:php7.svg)](https://microbadger.com/images/babim/nginx:php7 "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/babim/nginx:php7.ssh.svg)](https://microbadger.com/images/babim/nginx:php7.ssh "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/nginx:php7.ssh.svg)](https://microbadger.com/images/babim/nginx:php7.ssh "Get your own version badge on microbadger.com")
+
+[![](https://images.microbadger.com/badges/image/babim/nginx:php7.cron.svg)](https://microbadger.com/images/babim/nginx:php7.cron "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/nginx:php7.cron.svg)](https://microbadger.com/images/babim/nginx:php7.cron "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/babim/nginx:php7.cron.ssh.svg)](https://microbadger.com/images/babim/nginx:php7.cron.ssh "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/nginx:php7.cron.ssh.svg)](https://microbadger.com/images/babim/nginx:php7.cron.ssh "Get your own version badge on microbadger.com")
+
+[![](https://images.microbadger.com/badges/image/babim/nginx:php7.cron.nfs.svg)](https://microbadger.com/images/babim/nginx:php7.cron.nfs "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/nginx:php7.cron.nfs.svg)](https://microbadger.com/images/babim/nginx:php7.cron.nfs "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/babim/nginx:php7.cron.synology.svg)](https://microbadger.com/images/babim/nginx:php7.cron.synology "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/nginx:php7.cron.synology.svg)](https://microbadger.com/images/babim/nginx:php7.synology.ssh "Get your own version badge on microbadger.com")
+
+[![](https://images.microbadger.com/badges/image/babim/nginx:php7.1.svg)](https://microbadger.com/images/babim/nginx:php7.1 "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/nginx:php7.1.svg)](https://microbadger.com/images/babim/nginx:php7.1 "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/babim/nginx:php7.1.ssh.svg)](https://microbadger.com/images/babim/nginx:php7.1.ssh "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/nginx:php7.1.ssh.svg)](https://microbadger.com/images/babim/nginx:php7.1.ssh "Get your own version badge on microbadger.com")
+
+[![](https://images.microbadger.com/badges/image/babim/nginx:php7.1.cron.svg)](https://microbadger.com/images/babim/nginx:php7.1.cron "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/nginx:php7.1.cron.svg)](https://microbadger.com/images/babim/nginx:php7.1.cron "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/babim/nginx:php7.1.cron.ssh.svg)](https://microbadger.com/images/babim/nginx:php7.1.cron.ssh "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/nginx:php7.1.cron.ssh.svg)](https://microbadger.com/images/babim/nginx:php7.1.cron.ssh "Get your own version badge on microbadger.com")
+
+[![](https://images.microbadger.com/badges/image/babim/nginx:php7.1.cron.nfs.svg)](https://microbadger.com/images/babim/nginx:php7.1.cron.nfs "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/nginx:php7.1.cron.nfs.svg)](https://microbadger.com/images/babim/nginx:php7.1.cron.nfs "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/babim/nginx:php7.1.cron.synology.svg)](https://microbadger.com/images/babim/nginx:php7.1.cron.synology "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/nginx:php7.1.cron.synology.svg)](https://microbadger.com/images/babim/nginx:php7.1.synology.ssh "Get your own version badge on microbadger.com")
+
+[![](https://images.microbadger.com/badges/image/babim/nginx:php7.2.svg)](https://microbadger.com/images/babim/nginx:php7.2 "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/nginx:php7.2.svg)](https://microbadger.com/images/babim/nginx:php7.2 "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/babim/nginx:php7.2.ssh.svg)](https://microbadger.com/images/babim/nginx:php7.2.ssh "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/nginx:php7.2.ssh.svg)](https://microbadger.com/images/babim/nginx:php7.2.ssh "Get your own version badge on microbadger.com")
+
+[![](https://images.microbadger.com/badges/image/babim/nginx:php7.2.cron.svg)](https://microbadger.com/images/babim/nginx:php7.2.cron "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/nginx:php7.2.cron.svg)](https://microbadger.com/images/babim/nginx:php7.2.cron "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/babim/nginx:php7.2.cron.ssh.svg)](https://microbadger.com/images/babim/nginx:php7.2.cron.ssh "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/nginx:php7.2.cron.ssh.svg)](https://microbadger.com/images/babim/nginx:php7.2.cron.ssh "Get your own version badge on microbadger.com")
+
+[![](https://images.microbadger.com/badges/image/babim/nginx:php7.2.cron.nfs.svg)](https://microbadger.com/images/babim/nginx:php7.2.cron.nfs "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/nginx:php7.2.cron.nfs.svg)](https://microbadger.com/images/babim/nginx:php7.2.cron.nfs "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/babim/nginx:php7.2.cron.synology.svg)](https://microbadger.com/images/babim/nginx:php7.2.cron.synology "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/nginx:php7.2.cron.synology.svg)](https://microbadger.com/images/babim/nginx:php7.2.synology.ssh "Get your own version badge on microbadger.com")
+
+[![](https://images.microbadger.com/badges/image/babim/nginx:php7.alpine.svg)](https://microbadger.com/images/babim/nginx:php7.alpine "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/nginx:php7.alpine.svg)](https://microbadger.com/images/babim/nginx:php7.alpine "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/babim/nginx:php7.alpine.ssh.svg)](https://microbadger.com/images/babim/nginx:php7.alpine.ssh "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/nginx:php7.alpine.ssh.svg)](https://microbadger.com/images/babim/nginx:php7.alpine.ssh "Get your own version badge on microbadger.com")
+
+[![](https://images.microbadger.com/badges/image/babim/nginx:php7.alpine.cron.svg)](https://microbadger.com/images/babim/nginx:php7.alpine.cron "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/nginx:php7.alpine.cron.svg)](https://microbadger.com/images/babim/nginx:php7.alpine.cron "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/babim/nginx:php7.alpine.cron.ssh.svg)](https://microbadger.com/images/babim/nginx:php7.alpine.cron.ssh "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/nginx:php7.alpine.cron.ssh.svg)](https://microbadger.com/images/babim/nginx:php7.alpine.cron.ssh "Get your own version badge on microbadger.com")
+
+# docker-ubuntu-nginx
+
+#Usage
 ```
-$ sudo docker run -it --name=kerioconnect \
--h mail.domain.test -e DNSSERVER=192.168.1.2 \
--p 4040:4040 \
--p 22:22 -p 25:25 -p 465:465 -p 587:587 -p 110:110 -p 995:995 \
--p 143:143 -p 993:993 -p 119:119 -p 563:563 -p 389:389 -p 636:636 \
--p 80:80 -p 443:443 -p 5222:5222 -p 5223:5223 \
--v /keriomail:/opt/kerio babim/kerio-connect
+docker run -d -p 80:80 babim/ubuntu-nginx:proxy
 ```
-## How to update ?
+Attach persistent/shared directories
+```
+docker run -d -p 80:80 -v <sites-enabled-dir>:/etc/nginx/conf.d -v <certs-dir>:/etc/nginx/certs -v <log-dir>:/var/log/nginx -v <html-dir>:/var/www/html babim/ubuntu-nginx:proxy
+```
+After few seconds, open http://<host> to see the welcome page.
 
-yeah, you can remove kerio files/folders in your volume but keep this follow files/folder:
-- *.cfg
-- mailserver/store
-- mailserver/dbSSL
-- mailserver/license
-- mailserver/settings
-- mailserver/sslca
-- mailserver/sslcert
-- mailserver/ldapmap
 
-OK. when you pull new images and run. New container will copy new version files/folders of Kerio Connect to your volume but skip files/folders have your settings exists
+Volume:
+```
+/var/www
+/etc/nginx
+/etc/php
+```
+
+Environment
+```
+TIMEZONE
+PHP_MEMORY_LIMIT
+MAX_UPLOAD
+PHP_MAX_FILE_UPLOAD
+PHP_MAX_POST
+MAX_INPUT_TIME
+MAX_EXECUTION_TIME
+```
+with environment ID:
+```
+auid = user id
+agid = group id
+auser = username
+Default: agid = auid
+```
