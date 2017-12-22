@@ -33,6 +33,6 @@ done
 else
 
 echo "Install Wrong! Please Check Image or Path Config!"
-echo "contact: ducanh.babim@yahoo.com"
+echo "contact: babim@matmagoc.com"
 sleep 60
 fi
