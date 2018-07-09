@@ -26,13 +26,13 @@ function terminate {
 	exit 0
 }
 trap terminate TERM INT
-/etc/init.d/kerio-connect start
+service kerio-connect start
 while :; do
 	sleep 1;
 done
 else
 
 echo "Install Wrong! Please Check Image or Path Config!"
-echo "contact: ducanh.babim@yahoo.com"
+echo "contact: babim@matmagoc.com"
 sleep 60
 fi
