@@ -2,10 +2,10 @@ FROM babim/ubuntubase:14.04
 ENV DEBIAN_FRONTEND noninteractive
 
 ## Install ##
-RUN apt-get update && apt-get install -y wget dnsutils resolvconf sysstat lsof krb5-kdc krb5-admin-server && \
-    mv /etc/krb5.conf /opt/kerio/krb5.conf && ln -sf /opt/kerio/krb5.conf /etc/krb5.conf
+RUN apt-get update && apt-get install -y wget dnsutils resolvconf sysstat lsof krb5-kdc krb5-admin-server
 RUN wget -O kerio-connect-linux-64bit.deb http://download.kerio.com/dwn/kerio-connect-linux-64bit.deb && \
-    dpkg -i kerio-connect-linux-64bit.deb && apt-get install -f && rm -f kerio-connect-linux-64bit.deb
+    dpkg -i kerio-connect-linux-64bit.deb && apt-get install -f && rm -f kerio-connect-linux-64bit.deb && \
+    mv /etc/krb5.conf /opt/kerio/krb5.conf && ln -sf /opt/kerio/krb5.conf /etc/krb5.conf
 
 ## Clean ##
 RUN apt-get clean && \
