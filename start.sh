@@ -26,7 +26,7 @@ function terminate {
 	exit 0
 }
 trap terminate TERM INT
-service kerio-connect start
+/etc/init.d/kerio-connect start
 while :; do
 	sleep 1;
 done
