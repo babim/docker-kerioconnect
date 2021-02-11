@@ -1,10 +1,16 @@
-FROM babim/ubuntubase:14.04
+FROM babim/ubuntubase:20.04
 ENV DEBIAN_FRONTEND noninteractive
+ENV KERIO_CONNECT_NOT_RUN yes
 
 ## Install ##
-RUN apt-get update && apt-get install -y wget cryptsetup dnsutils resolvconf sysstat lsof
+RUN apt-get update && apt-get install -y wget cryptsetup dnsutils sysstat lsof
 RUN wget -O kerio-connect-linux-64bit.deb http://download.kerio.com/dwn/kerio-connect-linux-64bit.deb && \
-    dpkg -i kerio-connect-linux-64bit.deb && apt-get install -f && rm -f kerio-connect-linux-64bit.deb
+    dpkg -i kerio-connect-linux-64bit.deb || true && apt-get install -f && \
+    mv /etc/krb5.conf /opt/kerio/krb5.conf && ln -sf /opt/kerio/krb5.conf /etc/krb5.conf
+
+## Set service ##
+RUN dpkg --fsys-tarfile kerio-connect-linux-64bit.deb | tar xOf - ./etc/init.d/kerio-connect > /etc/init.d/kerio-connect && \
+    chmod +x /etc/init.d/kerio-connect && rm -f kerio-connect-linux-64bit.deb
 
 ## Clean ##
 RUN apt-get clean && \
