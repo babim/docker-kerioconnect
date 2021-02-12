@@ -3,8 +3,8 @@ ENV DEBIAN_FRONTEND noninteractive
 ENV KERIO_CONNECT_NOT_RUN yes
 
 ## Install ##
-RUN apt-get update && apt-get install -y wget cryptsetup dnsutils sysstat lsof
-RUN wget -O kerio-connect-linux-64bit.deb http://media.matmagoc.com/kerio-connect-linux-64bit.deb && \
+RUN apt-get update && apt-get install -y wget cryptsetup dnsutils sysstat lsof && apt upgrade -y
+RUN wget -O kerio-connect-linux-64bit.deb http://file.matmagoc.com/kerio-connect-9.3.1-linux-amd64.deb && \
     dpkg -i kerio-connect-linux-64bit.deb || true && apt-get install -f
 
 ## Set service ##
