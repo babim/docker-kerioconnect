@@ -3,8 +3,8 @@ ENV DEBIAN_FRONTEND noninteractive
 ENV KERIO_CONNECT_NOT_RUN yes
 
 ## Install ##
-RUN apt-get update && apt-get install -y wget cryptsetup dnsutils sysstat lsof krb5-kdc krb5-admin-server
-RUN wget -O kerio-connect-linux-64bit.deb http://media.matmagoc.com/kerio-connect-linux-64bit.deb && \
+RUN apt-get update && apt-get install -y wget cryptsetup dnsutils sysstat lsof krb5-kdc krb5-admin-server && apt upgrade -y
+RUN wget -O kerio-connect-linux-64bit.deb http://file.matmagoc.com/kerio-connect-9.3.1-linux-amd64.deb && \
     dpkg -i kerio-connect-linux-64bit.deb || true && apt-get install -f && \
     mv /etc/krb5.conf /opt/kerio/krb5.conf && ln -sf /opt/kerio/krb5.conf /etc/krb5.conf
 
